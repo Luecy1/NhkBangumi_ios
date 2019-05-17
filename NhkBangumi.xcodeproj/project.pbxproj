@@ -3,19 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		11B63AC611B17EE213B69F30 /* Pods_NhkBangumiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3A377B531202308D18B28E /* Pods_NhkBangumiTests.framework */; };
 		52AADF8CFE1B27B2A38A322D /* Pods_NhkBangumiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1888CFC55CA80B08828273E /* Pods_NhkBangumiUITests.framework */; };
 		5A304D72228E8F1D00F20B05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A304D71228E8F1D00F20B05 /* AppDelegate.swift */; };
-		5A304D74228E8F1D00F20B05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A304D73228E8F1D00F20B05 /* ViewController.swift */; };
+		5A304D74228E8F1D00F20B05 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A304D73228E8F1D00F20B05 /* HomeViewController.swift */; };
 		5A304D77228E8F1D00F20B05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A304D75228E8F1D00F20B05 /* Main.storyboard */; };
 		5A304D79228E8F1F00F20B05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A304D78228E8F1F00F20B05 /* Assets.xcassets */; };
 		5A304D7C228E8F1F00F20B05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A304D7A228E8F1F00F20B05 /* LaunchScreen.storyboard */; };
 		5A304D87228E8F1F00F20B05 /* NhkBangumiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A304D86228E8F1F00F20B05 /* NhkBangumiTests.swift */; };
 		5A304D92228E8F1F00F20B05 /* NhkBangumiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A304D91228E8F1F00F20B05 /* NhkBangumiUITests.swift */; };
+		5AB16E2F228E9D4700DE394B /* ApplicationScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB16E2E228E9D4700DE394B /* ApplicationScheme.swift */; };
 		5D4713A016BAE2A6B517B2DD /* Pods_NhkBangumi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A63D30C9E4A24A4F56D089 /* Pods_NhkBangumi.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +42,7 @@
 		21053D4D918A01D9D7047877 /* Pods-NhkBangumiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NhkBangumiUITests.debug.xcconfig"; path = "Target Support Files/Pods-NhkBangumiUITests/Pods-NhkBangumiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5A304D6E228E8F1D00F20B05 /* NhkBangumi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NhkBangumi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A304D71228E8F1D00F20B05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5A304D73228E8F1D00F20B05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5A304D73228E8F1D00F20B05 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5A304D76228E8F1D00F20B05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A304D78228E8F1F00F20B05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A304D7B228E8F1F00F20B05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,6 +53,7 @@
 		5A304D8D228E8F1F00F20B05 /* NhkBangumiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NhkBangumiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A304D91228E8F1F00F20B05 /* NhkBangumiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NhkBangumiUITests.swift; sourceTree = "<group>"; };
 		5A304D93228E8F1F00F20B05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AB16E2E228E9D4700DE394B /* ApplicationScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationScheme.swift; sourceTree = "<group>"; };
 		67A5A1D3BA7A373113AE801B /* Pods-NhkBangumi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NhkBangumi.release.xcconfig"; path = "Target Support Files/Pods-NhkBangumi/Pods-NhkBangumi.release.xcconfig"; sourceTree = "<group>"; };
 		A1888CFC55CA80B08828273E /* Pods_NhkBangumiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NhkBangumiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28DFD7DA5439AFB4EBDA540 /* Pods-NhkBangumiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NhkBangumiTests.release.xcconfig"; path = "Target Support Files/Pods-NhkBangumiTests/Pods-NhkBangumiTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,11 +117,12 @@
 			isa = PBXGroup;
 			children = (
 				5A304D71228E8F1D00F20B05 /* AppDelegate.swift */,
-				5A304D73228E8F1D00F20B05 /* ViewController.swift */,
+				5A304D73228E8F1D00F20B05 /* HomeViewController.swift */,
 				5A304D75228E8F1D00F20B05 /* Main.storyboard */,
 				5A304D78228E8F1F00F20B05 /* Assets.xcassets */,
 				5A304D7A228E8F1F00F20B05 /* LaunchScreen.storyboard */,
 				5A304D7D228E8F1F00F20B05 /* Info.plist */,
+				5AB16E2E228E9D4700DE394B /* ApplicationScheme.swift */,
 			);
 			path = NhkBangumi;
 			sourceTree = "<group>";
@@ -162,7 +165,6 @@
 				21053D4D918A01D9D7047877 /* Pods-NhkBangumiUITests.debug.xcconfig */,
 				C17BE854B268A2991841AE61 /* Pods-NhkBangumiUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -405,7 +407,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A304D74228E8F1D00F20B05 /* ViewController.swift in Sources */,
+				5A304D74228E8F1D00F20B05 /* HomeViewController.swift in Sources */,
+				5AB16E2F228E9D4700DE394B /* ApplicationScheme.swift in Sources */,
 				5A304D72228E8F1D00F20B05 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
