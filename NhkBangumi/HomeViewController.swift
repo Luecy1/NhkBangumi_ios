@@ -14,6 +14,9 @@ class HomeViewController: UIViewController {
     var appBarViewController = MDCAppBarViewController()
 
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    let containerScheme = MDCContainerScheme()
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +40,7 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
@@ -45,8 +49,14 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cardView", for: indexPath) as! MDCCardCollectionCell
-
-        cell.applyTheme(withScheme: MDCContainerScheme())
+        
+        
+        cell.setImageTintColor(.blue, for: .dragged)
+        cell.cornerRadius = 8
+        cell.setShadowColor(UIColor.black, for: .highlighted)
+        cell.setBorderWidth(1.0, for:.normal)
+        
+//        cell.applyTheme(withScheme: containerScheme)
 
         return cell
     }

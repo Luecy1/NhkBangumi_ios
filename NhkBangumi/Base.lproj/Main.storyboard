@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="i5O-vO-gQb">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XYQ-JS-d9c">
                                     <size key="itemSize" width="176" height="211"/>
@@ -54,10 +54,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="i5O-vO-gQb" secondAttribute="bottom" id="c56-ba-HcJ"/>
-                            <constraint firstItem="i5O-vO-gQb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gdC-FG-0Vs"/>
-                            <constraint firstItem="i5O-vO-gQb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vit-6T-hIi"/>
-                            <constraint firstItem="i5O-vO-gQb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xEd-Tq-BNO"/>
+                            <constraint firstItem="i5O-vO-gQb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Df0-3R-W7I"/>
+                            <constraint firstAttribute="bottom" secondItem="i5O-vO-gQb" secondAttribute="bottom" id="Noe-Bx-ZnT"/>
+                            <constraint firstItem="i5O-vO-gQb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Wpr-gy-cOr"/>
+                            <constraint firstItem="i5O-vO-gQb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nOE-Pb-nFJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
