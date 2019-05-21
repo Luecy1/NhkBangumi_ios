@@ -19,45 +19,68 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="i5O-vO-gQb">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XYQ-JS-d9c">
-                                    <size key="itemSize" width="176" height="211"/>
+                                    <size key="itemSize" width="187" height="268"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cardView" id="zVO-do-Cmo" customClass="MyCardViewCell" customModule="NhkBangumi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="176" height="211"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="268"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="176" height="211"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="187" height="268"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ew-tg-os3">
-                                                    <rect key="frame" x="0.0" y="0.0" width="176" height="128"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9ew-tg-os3">
+                                                    <rect key="frame" x="0.0" y="0.0" width="187" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="sWN-FA-Nm9"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="番組タイトル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTz-g9-iLO">
-                                                    <rect key="frame" x="9" y="132" width="104" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="番組タイトル" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTz-g9-iLO">
+                                                    <rect key="frame" x="8" y="108" width="171" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="サブタイトル" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="nX0-x8-7dj">
+                                                    <rect key="frame" x="8" y="140.5" width="171" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="9ew-tg-os3" secondAttribute="trailing" id="E28-cf-61g"/>
+                                            <constraint firstItem="lTz-g9-iLO" firstAttribute="leading" secondItem="zVO-do-Cmo" secondAttribute="leadingMargin" id="HOe-cS-asl"/>
+                                            <constraint firstItem="nX0-x8-7dj" firstAttribute="trailing" secondItem="zVO-do-Cmo" secondAttribute="trailingMargin" id="W7Z-0r-p7R"/>
+                                            <constraint firstItem="nX0-x8-7dj" firstAttribute="leading" secondItem="zVO-do-Cmo" secondAttribute="leadingMargin" id="YLJ-a9-m6i"/>
+                                            <constraint firstItem="9ew-tg-os3" firstAttribute="top" secondItem="zVO-do-Cmo" secondAttribute="top" id="nNr-DP-0sI"/>
+                                            <constraint firstItem="nX0-x8-7dj" firstAttribute="top" secondItem="lTz-g9-iLO" secondAttribute="bottom" constant="12" id="pUJ-DH-SQ4"/>
+                                            <constraint firstItem="lTz-g9-iLO" firstAttribute="trailing" secondItem="zVO-do-Cmo" secondAttribute="trailingMargin" id="veq-OL-VrZ"/>
+                                            <constraint firstItem="lTz-g9-iLO" firstAttribute="top" secondItem="9ew-tg-os3" secondAttribute="bottom" constant="8" id="x4d-Ot-ovN"/>
+                                            <constraint firstItem="9ew-tg-os3" firstAttribute="leading" secondItem="zVO-do-Cmo" secondAttribute="leading" id="zs1-SL-PYC"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="bangumiLogo" destination="9ew-tg-os3" id="L5O-j2-qjy"/>
+                                            <outlet property="subtitle" destination="nX0-x8-7dj" id="I4z-pZ-wSh"/>
+                                            <outlet property="title" destination="lTz-g9-iLO" id="rTC-fp-ngF"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="i5O-vO-gQb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Df0-3R-W7I"/>
                             <constraint firstAttribute="bottom" secondItem="i5O-vO-gQb" secondAttribute="bottom" id="Noe-Bx-ZnT"/>
                             <constraint firstItem="i5O-vO-gQb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Wpr-gy-cOr"/>
-                            <constraint firstItem="i5O-vO-gQb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nOE-Pb-nFJ"/>
+                            <constraint firstItem="i5O-vO-gQb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dPP-is-P9R"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

@@ -9,6 +9,7 @@ target 'NhkBangumi' do
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
   pod 'MaterialComponents'
+  pod 'Kingfisher', '~> 5.0'
 
   target 'NhkBangumiTests' do
     inherit! :search_paths

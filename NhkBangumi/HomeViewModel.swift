@@ -6,10 +6,20 @@
 //  Copyright © 2019 Youhei oonuma. All rights reserved.
 //
 import RxSwift
+import RxCocoa
 
 class HomeViewModel {
-    
-    
-//    let bangumiItem: Observable<[(title: String, subtitle: String)]>
 
+    let bangumiList: Driver<[(title: String, subtitle: String)]>
+
+    init(_ model: BangumiListModel) {
+
+        bangumiList = model.getBangumiList()
+            .map { json in
+                return json.list.g1.map { program in
+                    (program.title, program.subtitle)
+                }
+            }.asDriver(onErrorJustReturn: [])
+
+    }
 }

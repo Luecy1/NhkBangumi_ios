@@ -16,6 +16,12 @@
 		5A304D7C228E8F1F00F20B05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A304D7A228E8F1F00F20B05 /* LaunchScreen.storyboard */; };
 		5A304D87228E8F1F00F20B05 /* NhkBangumiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A304D86228E8F1F00F20B05 /* NhkBangumiTests.swift */; };
 		5A304D92228E8F1F00F20B05 /* NhkBangumiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A304D91228E8F1F00F20B05 /* NhkBangumiUITests.swift */; };
+		5A5EF57322928F6800CA4D20 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5EF57222928F6800CA4D20 /* HomeViewModel.swift */; };
+		5A5EF5752292908300CA4D20 /* BangumiListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5EF5742292908300CA4D20 /* BangumiListModel.swift */; };
+		5A5EF5782292924B00CA4D20 /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5EF5772292924B00CA4D20 /* Json.swift */; };
+		5A5EF57A2292A30B00CA4D20 /* apikey.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A5EF5792292A30B00CA4D20 /* apikey.plist */; };
+		5A86A8C522937E4900ECFC7C /* BangumiListModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A86A8C422937E4900ECFC7C /* BangumiListModelTest.swift */; };
+		5A9C3E5C2293C9160066EA06 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9C3E5B2293C9160066EA06 /* Util.swift */; };
 		5AB16E2F228E9D4700DE394B /* ApplicationScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB16E2E228E9D4700DE394B /* ApplicationScheme.swift */; };
 		5D4713A016BAE2A6B517B2DD /* Pods_NhkBangumi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A63D30C9E4A24A4F56D089 /* Pods_NhkBangumi.framework */; };
 /* End PBXBuildFile section */
@@ -53,6 +59,12 @@
 		5A304D8D228E8F1F00F20B05 /* NhkBangumiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NhkBangumiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A304D91228E8F1F00F20B05 /* NhkBangumiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NhkBangumiUITests.swift; sourceTree = "<group>"; };
 		5A304D93228E8F1F00F20B05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A5EF57222928F6800CA4D20 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		5A5EF5742292908300CA4D20 /* BangumiListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BangumiListModel.swift; sourceTree = "<group>"; };
+		5A5EF5772292924B00CA4D20 /* Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Json.swift; sourceTree = "<group>"; };
+		5A5EF5792292A30B00CA4D20 /* apikey.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = apikey.plist; sourceTree = "<group>"; };
+		5A86A8C422937E4900ECFC7C /* BangumiListModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BangumiListModelTest.swift; sourceTree = "<group>"; };
+		5A9C3E5B2293C9160066EA06 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		5AB16E2E228E9D4700DE394B /* ApplicationScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationScheme.swift; sourceTree = "<group>"; };
 		67A5A1D3BA7A373113AE801B /* Pods-NhkBangumi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NhkBangumi.release.xcconfig"; path = "Target Support Files/Pods-NhkBangumi/Pods-NhkBangumi.release.xcconfig"; sourceTree = "<group>"; };
 		A1888CFC55CA80B08828273E /* Pods_NhkBangumiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NhkBangumiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +128,7 @@
 		5A304D70228E8F1D00F20B05 /* NhkBangumi */ = {
 			isa = PBXGroup;
 			children = (
+				5A5EF5762292922600CA4D20 /* json */,
 				5A304D71228E8F1D00F20B05 /* AppDelegate.swift */,
 				5A304D73228E8F1D00F20B05 /* HomeViewController.swift */,
 				5A304D75228E8F1D00F20B05 /* Main.storyboard */,
@@ -123,6 +136,10 @@
 				5A304D7A228E8F1F00F20B05 /* LaunchScreen.storyboard */,
 				5A304D7D228E8F1F00F20B05 /* Info.plist */,
 				5AB16E2E228E9D4700DE394B /* ApplicationScheme.swift */,
+				5A5EF57222928F6800CA4D20 /* HomeViewModel.swift */,
+				5A5EF5742292908300CA4D20 /* BangumiListModel.swift */,
+				5A5EF5792292A30B00CA4D20 /* apikey.plist */,
+				5A9C3E5B2293C9160066EA06 /* Util.swift */,
 			);
 			path = NhkBangumi;
 			sourceTree = "<group>";
@@ -131,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				5A304D86228E8F1F00F20B05 /* NhkBangumiTests.swift */,
+				5A86A8C422937E4900ECFC7C /* BangumiListModelTest.swift */,
 				5A304D88228E8F1F00F20B05 /* Info.plist */,
 			);
 			path = NhkBangumiTests;
@@ -143,6 +161,14 @@
 				5A304D93228E8F1F00F20B05 /* Info.plist */,
 			);
 			path = NhkBangumiUITests;
+			sourceTree = "<group>";
+		};
+		5A5EF5762292922600CA4D20 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				5A5EF5772292924B00CA4D20 /* Json.swift */,
+			);
+			path = json;
 			sourceTree = "<group>";
 		};
 		6C61B78D73131CFFF6022B86 /* Frameworks */ = {
@@ -278,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A304D7C228E8F1F00F20B05 /* LaunchScreen.storyboard in Resources */,
+				5A5EF57A2292A30B00CA4D20 /* apikey.plist in Resources */,
 				5A304D79228E8F1F00F20B05 /* Assets.xcassets in Resources */,
 				5A304D77228E8F1D00F20B05 /* Main.storyboard in Resources */,
 			);
@@ -408,8 +435,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A304D74228E8F1D00F20B05 /* HomeViewController.swift in Sources */,
+				5A5EF5752292908300CA4D20 /* BangumiListModel.swift in Sources */,
 				5AB16E2F228E9D4700DE394B /* ApplicationScheme.swift in Sources */,
+				5A5EF5782292924B00CA4D20 /* Json.swift in Sources */,
+				5A9C3E5C2293C9160066EA06 /* Util.swift in Sources */,
 				5A304D72228E8F1D00F20B05 /* AppDelegate.swift in Sources */,
+				5A5EF57322928F6800CA4D20 /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +449,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A304D87228E8F1F00F20B05 /* NhkBangumiTests.swift in Sources */,
+				5A86A8C522937E4900ECFC7C /* BangumiListModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,7 +627,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.luecy1.NhkBangumi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -614,7 +646,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.luecy1.NhkBangumi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
