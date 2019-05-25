@@ -19,7 +19,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
 
     let containerScheme = MDCContainerScheme()
-    
+
     let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
@@ -49,7 +49,6 @@ class HomeViewController: UIViewController {
 
         appBarViewController.headerView.trackingScrollView = self.collectionView
 
-
         // set up viewmodel
         let viewmodel = HomeViewModel(BangumiListModel())
 
@@ -73,6 +72,16 @@ class HomeViewController: UIViewController {
 
         }.disposed(by: disposeBag)
 
+        collectionView.rx.itemSelected.subscribe(onNext: { index in
+            print(index)
+        }).disposed(by: disposeBag)
+
+        // うまくviewmodelと連結するようにしたい
+        Observable.combineLatest(collectionView.rx.itemSelected, viewmodel.bangumiList.asObservable()) { (index, bangumiList) in
+            return bangumiList[index.row].title
+        }.subscribe(onNext: { bamgumi in
+            print(bamgumi)
+        }).disposed(by: disposeBag)
     }
 }
 
