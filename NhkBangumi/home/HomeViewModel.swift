@@ -12,21 +12,19 @@ class HomeViewModel {
 
     let disposeBag = DisposeBag()
 
-    let bangumiList: Driver<[(title: String, subtitle: String)]>
+    let bangumiList: Driver<[Program]>
 
-    let itemClick: Driver<(title: String, subtitle: String)>
+    let itemClick: Observable<Program>
 
     init(_ model: BangumiListModel, itemSelected: ControlEvent<IndexPath>) {
 
         bangumiList = model.getBangumiList()
             .map { json in
-                return json.list.g1.map { program in
-                    (program.title, program.subtitle)
-                }
+                return json.list.g1
             }.asDriver(onErrorJustReturn: [])
 
         itemClick = Observable.combineLatest(itemSelected, bangumiList.asObservable()) { (index, bangumiList) in
             return bangumiList[index.row]
-        }.asDriver(onErrorJustReturn: (title: "", subtitle: ""))
+        }
     }
 }

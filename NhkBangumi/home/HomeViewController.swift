@@ -72,8 +72,8 @@ class HomeViewController: UIViewController {
 
         }.disposed(by: disposeBag)
 
-        viewmodel.itemClick.drive(onNext: { bangumi in
-            print(bangumi.title)
+        viewmodel.itemClick.subscribe(onNext: { bangumi in
+            print(bangumi.id)
         }).disposed(by: disposeBag)
     }
 }
