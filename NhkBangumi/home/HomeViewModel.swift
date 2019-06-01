@@ -9,14 +9,14 @@ import RxSwift
 import RxCocoa
 
 class HomeViewModel {
-    
+
     let disposeBag = DisposeBag()
 
     let bangumiList: Driver<[(title: String, subtitle: String)]>
 
-//    let itemClick: Driver<[(title: String, subtitle: String)]>
-    
-    init(_ model: BangumiListModel) {
+    let itemClick: Driver<(title: String, subtitle: String)>
+
+    init(_ model: BangumiListModel, itemSelected: ControlEvent<IndexPath>) {
 
         bangumiList = model.getBangumiList()
             .map { json in
@@ -25,5 +25,8 @@ class HomeViewModel {
                 }
             }.asDriver(onErrorJustReturn: [])
 
+        itemClick = Observable.combineLatest(itemSelected, bangumiList.asObservable()) { (index, bangumiList) in
+            return bangumiList[index.row]
+        }.asDriver(onErrorJustReturn: (title: "", subtitle: ""))
     }
 }

@@ -50,7 +50,7 @@ class HomeViewController: UIViewController {
         appBarViewController.headerView.trackingScrollView = self.collectionView
 
         // set up viewmodel
-        let viewmodel = HomeViewModel(BangumiListModel())
+        let viewmodel = HomeViewModel(BangumiListModel(), itemSelected: collectionView.rx.itemSelected)
 
         _ = viewmodel.bangumiList.asObservable().bind(to: collectionView.rx.items(cellIdentifier: "cardView", cellType: MyCardViewCell.self)) {
             [weak self] row, element, cell in
@@ -72,11 +72,8 @@ class HomeViewController: UIViewController {
 
         }.disposed(by: disposeBag)
 
-        // うまくviewmodelと連結するようにしたい
-        Observable.combineLatest(collectionView.rx.itemSelected, viewmodel.bangumiList.asObservable()) { (index, bangumiList) in
-            return bangumiList[index.row]
-        }.subscribe(onNext: { bamgumi in
-            print(bamgumi.title)
+        viewmodel.itemClick.drive(onNext: { bangumi in
+            print(bangumi.title)
         }).disposed(by: disposeBag)
     }
 }
