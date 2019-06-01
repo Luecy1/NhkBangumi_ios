@@ -72,15 +72,11 @@ class HomeViewController: UIViewController {
 
         }.disposed(by: disposeBag)
 
-        collectionView.rx.itemSelected.subscribe(onNext: { index in
-            print(index)
-        }).disposed(by: disposeBag)
-
         // うまくviewmodelと連結するようにしたい
         Observable.combineLatest(collectionView.rx.itemSelected, viewmodel.bangumiList.asObservable()) { (index, bangumiList) in
-            return bangumiList[index.row].title
+            return bangumiList[index.row]
         }.subscribe(onNext: { bamgumi in
-            print(bamgumi)
+            print(bamgumi.title)
         }).disposed(by: disposeBag)
     }
 }

@@ -9,9 +9,13 @@ import RxSwift
 import RxCocoa
 
 class HomeViewModel {
+    
+    let disposeBag = DisposeBag()
 
     let bangumiList: Driver<[(title: String, subtitle: String)]>
 
+//    let itemClick: Driver<[(title: String, subtitle: String)]>
+    
     init(_ model: BangumiListModel) {
 
         bangumiList = model.getBangumiList()
