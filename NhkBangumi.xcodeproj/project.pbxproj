@@ -21,6 +21,8 @@
 		5A5EF5782292924B00CA4D20 /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5EF5772292924B00CA4D20 /* Json.swift */; };
 		5A5EF57A2292A30B00CA4D20 /* apikey.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A5EF5792292A30B00CA4D20 /* apikey.plist */; };
 		5A86A8C522937E4900ECFC7C /* BangumiListModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A86A8C422937E4900ECFC7C /* BangumiListModelTest.swift */; };
+		5A974B7B22A253FC0041EBAA /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A974B7A22A253FC0041EBAA /* Detail.storyboard */; };
+		5A974B7D22A254340041EBAA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A974B7C22A254340041EBAA /* DetailViewController.swift */; };
 		5A9C3E5C2293C9160066EA06 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9C3E5B2293C9160066EA06 /* Util.swift */; };
 		5AB16E2F228E9D4700DE394B /* ApplicationScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB16E2E228E9D4700DE394B /* ApplicationScheme.swift */; };
 		5D4713A016BAE2A6B517B2DD /* Pods_NhkBangumi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A63D30C9E4A24A4F56D089 /* Pods_NhkBangumi.framework */; };
@@ -64,6 +66,8 @@
 		5A5EF5772292924B00CA4D20 /* Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Json.swift; sourceTree = "<group>"; };
 		5A5EF5792292A30B00CA4D20 /* apikey.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = apikey.plist; sourceTree = "<group>"; };
 		5A86A8C422937E4900ECFC7C /* BangumiListModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BangumiListModelTest.swift; sourceTree = "<group>"; };
+		5A974B7A22A253FC0041EBAA /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		5A974B7C22A254340041EBAA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		5A9C3E5B2293C9160066EA06 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		5AB16E2E228E9D4700DE394B /* ApplicationScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationScheme.swift; sourceTree = "<group>"; };
 		67A5A1D3BA7A373113AE801B /* Pods-NhkBangumi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NhkBangumi.release.xcconfig"; path = "Target Support Files/Pods-NhkBangumi/Pods-NhkBangumi.release.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +145,7 @@
 			children = (
 				5A974B7322A24E750041EBAA /* application */,
 				5A212AD222A236F700D0EEF1 /* home */,
+				5A974B7522A2524F0041EBAA /* detail */,
 				5A5EF5762292922600CA4D20 /* json */,
 				5A974B7422A24EC30041EBAA /* calender */,
 				5A304D78228E8F1F00F20B05 /* Assets.xcassets */,
@@ -193,6 +198,15 @@
 				5A9C3E5B2293C9160066EA06 /* Util.swift */,
 			);
 			path = calender;
+			sourceTree = "<group>";
+		};
+		5A974B7522A2524F0041EBAA /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				5A974B7A22A253FC0041EBAA /* Detail.storyboard */,
+				5A974B7C22A254340041EBAA /* DetailViewController.swift */,
+			);
+			path = detail;
 			sourceTree = "<group>";
 		};
 		6C61B78D73131CFFF6022B86 /* Frameworks */ = {
@@ -330,6 +344,7 @@
 				5A304D7C228E8F1F00F20B05 /* LaunchScreen.storyboard in Resources */,
 				5A5EF57A2292A30B00CA4D20 /* apikey.plist in Resources */,
 				5A304D79228E8F1F00F20B05 /* Assets.xcassets in Resources */,
+				5A974B7B22A253FC0041EBAA /* Detail.storyboard in Resources */,
 				5A304D77228E8F1D00F20B05 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,6 +480,7 @@
 				5A9C3E5C2293C9160066EA06 /* Util.swift in Sources */,
 				5A304D72228E8F1D00F20B05 /* AppDelegate.swift in Sources */,
 				5A5EF57322928F6800CA4D20 /* HomeViewModel.swift in Sources */,
+				5A974B7D22A254340041EBAA /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

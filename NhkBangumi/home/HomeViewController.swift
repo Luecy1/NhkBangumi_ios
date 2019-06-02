@@ -73,8 +73,12 @@ class HomeViewController: UIViewController {
         }.disposed(by: disposeBag)
 
         viewmodel.itemClick.subscribe(onNext: { bangumi in
-            print(bangumi.id)
+            self.pushDetail(programId: bangumi.id)
         }).disposed(by: disposeBag)
+    }
+
+    private func pushDetail(programId: String) {
+        // TODO:detailに遷移する処理
     }
 }
 
