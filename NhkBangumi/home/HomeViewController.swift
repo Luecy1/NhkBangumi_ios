@@ -79,6 +79,14 @@ class HomeViewController: UIViewController {
 
     private func pushDetail(programId: String) {
         // TODO:detailに遷移する処理
+        let storyboard: UIStoryboard = UIStoryboard(name: "Detail", bundle: nil)
+        let next: UIViewController = storyboard.instantiateInitialViewController() as! UIViewController
+        present(next, animated: true, completion: nil)
+
+        // 下記、どれもうまくいかない
+//        appBarViewController.showDetailViewController(next, sender: nil)
+//        navigationController?.pushViewController(next, animated: true)
+//        appBarViewController.navigationController?.pushViewController(next, animated: true)
     }
 }
 
